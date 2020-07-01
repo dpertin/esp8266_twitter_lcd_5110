@@ -1,7 +1,27 @@
 
 # Display tweets on a Nokia 5110 LCD with an ESP8266
 
-## Installation
+![Yeah it's on my fridge!](picture.jpg)
+
+## Assembly instructions
+
+For this project you need the following devices:
+- an ESP8266 (I am using NodeMCU),
+- a Nokia 5110 LCD module,
+- a 3V power supply,
+- some wires.
+
+Regarding the LCD, plug its pins as follows: 
+- LCD RST -> ESP8266 D0
+- LCD CE -> ESP8266 D1
+- LCD DC -> ESP8266 D2
+- LCD Din -> ESP8266 D3
+- LCD CLK -> ESP8266 D4
+- LCD Vcc -> 3V
+- LCD BL -> 3V
+- LCD Gnd -> Gnd
+
+## Software dependencies
 
 This software depends on few libraries:
 1. [NTPClient](https://github.com/arduino-libraries/NTPClient) 3.2.0 from Fabrice Weinberg (install from IDE),
